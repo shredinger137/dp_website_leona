@@ -6,7 +6,7 @@ padding:0;
 outline:none;
 }
 
-body {
+.mainbody {
 	background:url(../images/body.jpg) top repeat-x #050507;
 	font:70% Verdana;
 	color:#FFFFFF;
