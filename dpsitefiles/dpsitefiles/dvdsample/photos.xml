@@ -1,0 +1,161 @@
+<gallery
+base = ""
+background = "#FFFFFF"
+banner = "#F0F0F0"
+text = "#000000"
+link = "#0000FF"
+alink = "#FF0000"
+vlink = "#800080"
+date = "">
+	<sitename>Digital Perfection</sitename>
+	<photographer></photographer>
+	<contactinfo>Select a theme</contactinfo>
+	<email></email>
+	<security><![CDATA[]]> </security>
+
+<banner font = "Helvetica" fontsize = "3" color =  "#F0F0F0"> </banner>
+<thumbnail base ="thumbnails/" font = "Helvetica" fontsize = "4" color = "#F0F0F0" border = "0" rows = "3" col = "5"> </thumbnail> 
+<large base ="images/" font = "Helvetica" fontsize = "3" color = "#F0F0F0" border = "0"> </large>
+<images id = "images">
+
+<image
+path = "brushstroke.jpg"
+width = "700"
+height = "397"
+thumbpath = "brushstroke.jpg"
+thumbwidth = "75"
+thumbheight = "42">
+</image>
+
+
+<image
+path = "confetti.jpg"
+width = "700"
+height = "571"
+thumbpath = "confetti.jpg"
+thumbwidth = "75"
+thumbheight = "61">
+</image>
+
+
+<image
+path = "drivein.jpg"
+width = "700"
+height = "556"
+thumbpath = "drivein.jpg"
+thumbwidth = "75"
+thumbheight = "59">
+</image>
+
+
+<image
+path = "fish.jpg"
+width = "700"
+height = "556"
+thumbpath = "fish.jpg"
+thumbwidth = "75"
+thumbheight = "59">
+</image>
+
+
+<image
+path = "heart.jpg"
+width = "700"
+height = "540"
+thumbpath = "heart.jpg"
+thumbwidth = "75"
+thumbheight = "57">
+</image>
+
+
+<image
+path = "lp.jpg"
+width = "700"
+height = "393"
+thumbpath = "lp.jpg"
+thumbwidth = "75"
+thumbheight = "42">
+</image>
+
+
+<image
+path = "memories-waterdrops.jpg"
+width = "700"
+height = "531"
+thumbpath = "memories-waterdrops.jpg"
+thumbwidth = "75"
+thumbheight = "56">
+</image>
+
+
+<image
+path = "oldbook.jpg"
+width = "700"
+height = "556"
+thumbpath = "oldbook.jpg"
+thumbwidth = "75"
+thumbheight = "59">
+</image>
+
+
+<image
+path = "postcard.jpg"
+width = "700"
+height = "571"
+thumbpath = "postcard.jpg"
+thumbwidth = "75"
+thumbheight = "61">
+</image>
+
+
+<image
+path = "postcards.jpg"
+width = "700"
+height = "522"
+thumbpath = "postcards.jpg"
+thumbwidth = "75"
+thumbheight = "55">
+</image>
+
+
+<image
+path = "revolution.jpg"
+width = "700"
+height = "393"
+thumbpath = "revolution.jpg"
+thumbwidth = "75"
+thumbheight = "42">
+</image>
+
+
+<image
+path = "shelf.jpg"
+width = "700"
+height = "393"
+thumbpath = "shelf.jpg"
+thumbwidth = "75"
+thumbheight = "42">
+</image>
+
+
+<image
+path = "sunflower.jpg"
+width = "700"
+height = "393"
+thumbpath = "sunflower.jpg"
+thumbwidth = "75"
+thumbheight = "42">
+</image>
+
+
+<image
+path = "theater.jpg"
+width = "700"
+height = "556"
+thumbpath = "theater.jpg"
+thumbwidth = "75"
+thumbheight = "59">
+</image>
+
+</images>
+</gallery>

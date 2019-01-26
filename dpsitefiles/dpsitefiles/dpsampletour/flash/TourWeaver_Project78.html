@@ -1,0 +1,76 @@
+<html> 
+ <head> 
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+ <title>Virtual Tour Created By Digital Perfection</title> 
+ <style type="text/css">
+ body,td,th {
+	color: #CCC;
+}
+body {
+	background-color: #000;
+}
+ </style>
+ </head> 
+ <body leftMargin="0" topMargin="0" rightMargin="0" bottomMargin="0"> 
+ <script type="text/javascript" src="swfobject.js"></script> 
+ <div id="flashcontent" width = "800" height ="630" onmousewheel="return false;"> 
+ To view virtual tour properly, Flash Player 9.0.28 or later version is needed. 
+ Please download the latest version of <a href="http://www.adobe.com/go/getflashplayer" target="_blank">Flash Player</a> and install it on your computer.
+ </div> 
+ <script type="text/javascript">
+ var jsReady = true;
+ function isJsReady() {
+ 	return jsReady;
+ }
+ function pageInit() {
+ 	jsReady = true;
+ }
+ function thisMovie(movieName) {
+ 	return document.getElementById(movieName);
+ }
+ function changeSceneOnLoad(){
+ 	var panoid=window.location.search.split("&")[0];
+ 	if(panoid.indexOf("firstscene") != -1)
+ 	{
+ 		panoid = panoid.split("=")[1];
+ 	}
+ 	if(panoid)
+ 	{
+ 		if(thisMovie("sotester").twAPI){
+ 			setTimeout(function(){thisMovie("sotester").twAPI("switchToScene", panoid);},500);
+ 		}else{
+ 			setTimeout(changeSceneOnLoad,1000);
+ 		}	
+ 	}
+ }
+ </script>
+ 
+ <script type="text/javascript"> 
+ // <![CDATA[ 
+ var so = new SWFObject("twviewer.swf", "sotester", "800", "630", "9.0.0", "#000000"); 
+ so.addParam("allowNetworking", "all"); 
+ so.addParam("allowScriptAccess", "always"); 
+ so.addParam("allowFullScreen", "true"); 
+ so.addParam("scale", "noscale"); 
+ //<!-%% Share Mode %%->
+ so.addVariable("lwImg", ""); 
+ so.addVariable("lwBgColor", "255,0,0,0"); 
+ so.addVariable("lwBarBgColor", "255,209,209,209"); 
+ so.addVariable("lwBarColor", "255,0,0,0"); 
+ so.addVariable("lwBarBounds", "-191,-437,386,245"); 
+ so.addVariable("lwlocation", "7"); 
+ so.addVariable("lwShowLoadingPercent", "true"); 
+ so.addVariable("lwTextColor", "255,0,0,0"); 
+ so.addVariable("iniFile", "config_Project78.bin"); 
+ so.addVariable("progressType", "0"); 
+ so.addVariable("swfFile", ""); 
+ so.addVariable("percentType", "0"); 
+ so.addVariable("sizeFile", "filesize.txt"); 
+ so.addVariable("href", location.href); 
+ so.addVariable("lwbounds", "<!-%% videobounds %%->");
+ so.write("flashcontent"); 
+ changeSceneOnLoad(); 
+ // ]]> 
+ </script> 
+ </body> 
+ </html>
