@@ -198,3 +198,10 @@ text-indent:0;
 #footer p.validate {
 float:right;
 }
+
+.style3 {font-size: 185%}
+.style10 {font-size: 12px}
+.style10 {color: #000000}
+.style11 {color: #FFFFFF}
+.style12 {color: #CCCCCC}
+.style14 {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: medium; font-weight: bold; }
