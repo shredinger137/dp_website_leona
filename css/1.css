@@ -114,7 +114,7 @@ padding:10px 10px 10px 25px;
 	color:#bdbdc1;
 	background-color: #181825;
 	border: 2 px;
-	font-size: 14px;
+	font-size: 1.2em
 }
 
 #container #sidebar h2 {
@@ -208,6 +208,11 @@ text-indent:0;
 
 #footer p.validate {
 float:right;
+}
+
+.main {
+	font-size: 1.2em;
+	color: #000000;
 }
 
 .style3 {font-size: 185%}
