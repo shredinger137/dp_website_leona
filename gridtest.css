@@ -1,0 +1,54 @@
+body {
+  background-color: black;
+}
+
+.contentgrid {
+  grid-area: content;
+  background-color: red;
+}
+
+.sidebargrid {
+  grid-area: sidebar;
+  background-color: blue;
+}
+
+.headergrid {
+  grid-area: header;
+  background-color: yellow;
+}
+
+.navgrid {
+  grid-area: nav;
+  background: orange;
+}
+
+.left {
+  grid-area: left;
+}
+
+.right {
+  grid-area: right;
+  opacity: 0;
+}
+
+.wrapper {
+  width: 75vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "header header header header header"
+  "left nav nav nav right"
+  "left content content sidebar right";
+  grid-gap: 0px;
+  background-color: #fff;
+  color: #444;
+  margin: 0 auto
+}
+
+
+@media screen and (max-width: 600px){
+  .wrapper {
+    grid-template-columns: 1fr;
+    grid-template-areas: "header" "nav" "content" "sidebar";
+  }
+
+}

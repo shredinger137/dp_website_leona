@@ -265,3 +265,28 @@ float:right;
 .style11 {color: #FFFFFF}
 .style12 {color: #CCCCCC}
 .style14 {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: medium; font-weight: bold; }
+
+
+
+.gridwrapper {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-gap: 10px;
+  background-color: #fff;
+  color: #444;
+}
+
+.box {
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+}
+
+@media screen and (max-width: 600px){
+  .gridwrapper {
+    grid-template-columns: 1fr;
+  }
+
+}
