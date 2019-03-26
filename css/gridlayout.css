@@ -1,0 +1,120 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.mainbody {
+	background:url(../images/body.jpg) top repeat-x #050507;
+	color:#FFFFFF;
+}
+
+.contentgrid {
+  grid-area: content;
+  background:#151521;
+}
+
+.sidebargrid {
+  grid-area: sidebar;
+  background:#151521;
+}
+
+.headergrid {
+  grid-area: header;
+  text-align: center;
+	color:#fff;
+  overflow: hidden;
+}
+
+.navgrid {
+  grid-area: nav;
+  background:#181825;
+  border-top:1px solid #2E2E47;
+  min-height: 25px;
+}
+
+.imagewrapper {
+  width: 100vw;
+  text-align: center; /* ensures the image is always in the h-middle */
+  overflow: hidden; /* hide the cropped portion */
+}
+
+.headerimage {
+  position: relative; /* allows repositioning */
+  left: 100%; /* move the whole width of the image to the right */
+  margin-left: -200%; /* magic! */
+}
+
+
+.wrapper {
+  width: 65vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr ;
+  grid-template-areas: "header header header "
+  "nav nav nav"
+  "content content sidebar";
+  grid-gap: 0px;
+  color: #444;
+  margin:0 auto
+
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+
+nav a {
+padding:12px;
+color:#ACACB0;
+text-decoration:none;
+margin-right:0px;
+}
+
+nav li {
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+nav li:hover {
+background-image: linear-gradient(#0d0e13, #171723);
+color:#fff;
+
+}
+
+nav li.active {
+background-image: linear-gradient(#0d0e13, #171723);
+color:#fff;
+font-weight:bold;
+}
+
+
+h1 {
+font:1.7rem Century Gothic;
+color:#fff;
+font-weight:bold;
+margin:20px auto 0;
+}
+
+p.note {
+padding:20px;
+background:#2D2D44;
+color:#fff;
+}
+
+@media screen and (max-width: 600px){
+  .wrapper {
+    grid-template-columns: 1fr;
+    grid-template-areas: "header" "nav" "content" "sidebar";
+    width: 100vw;
+  }
+
+  .logo{
+		display:none;
+	}
+
+  nav li {
+    font-size: 2.8vw;
+  }
+
+  }
