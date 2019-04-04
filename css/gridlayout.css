@@ -11,7 +11,6 @@
 p {
 margin:10px 0;
 padding:5px;
-line-height:20px;
 color: #ffffff;
 }
 
@@ -20,6 +19,13 @@ color: #ffffff;
   background:#151521;
   padding: 15px;
 }
+
+.bottomgrid {
+  grid-area: lower;
+  background:#151521;
+  padding: 15px;
+}
+
 
 .sidebargrid {
   grid-area: sidebar;
@@ -81,6 +87,21 @@ table {
   color: #444;
   margin:0 auto
 
+}
+
+
+.altwrapper {
+  width: 65vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr ;
+  grid-template-areas: "header header header "
+  "nav nav nav"
+  "content content sidebar"
+  "lower lower lower"
+  "spacer spacer spacer";
+  grid-gap: 0px;
+  color: #444;
+  margin:0 auto
 }
 
 nav ul {
@@ -165,6 +186,20 @@ a:hover {
     grid-template-columns: 1fr;
     grid-template-areas: "header" "nav" "content" "sidebar" "spacer";
     width: 100vw;
+  }
+
+  .altwrapper {
+    width: 100vw;
+    grid-template-columns: 1fr;
+    grid-template-areas: "header"
+    "nav"
+    "content"
+    "lower"
+    "sidebar"
+    "spacer";
+    grid-gap: 0px;
+    color: #444;
+    margin:0 auto
   }
 
   .logo{
