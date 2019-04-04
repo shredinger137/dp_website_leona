@@ -107,9 +107,13 @@ color:#fff;
 
 }
 
-.active {
+li.active {
   background-image: linear-gradient(#0d0e13, #171723);
   color:#fff;
+}
+
+a.active {
+  color: #fff;
 }
 
 
