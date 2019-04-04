@@ -8,14 +8,25 @@
 	color:#FFFFFF;
 }
 
+p {
+margin:10px 0;
+padding:5px;
+line-height:20px;
+color: #ffffff;
+}
+
 .contentgrid {
   grid-area: content;
   background:#151521;
+  padding: 15px;
 }
 
 .sidebargrid {
   grid-area: sidebar;
-  background:#151521;
+  background:#181825;
+  padding: 15px;
+  color:#bdbdc1;
+  border: 2 px;
 }
 
 .headergrid {
@@ -25,23 +36,36 @@
   overflow: hidden;
 }
 
+.spacegrid {
+  grid-area: spacer;
+  height: 15px;
+}
+
 .navgrid {
   grid-area: nav;
   background:#181825;
   border-top:1px solid #2E2E47;
   min-height: 25px;
+  padding: 10px;
 }
 
-.imagewrapper {
-  width: 100vw;
-  text-align: center; /* ensures the image is always in the h-middle */
-  overflow: hidden; /* hide the cropped portion */
+table {
+  color: #ffffff;
 }
+
+
 
 .headerimage {
   position: relative; /* allows repositioning */
   left: 100%; /* move the whole width of the image to the right */
   margin-left: -200%; /* magic! */
+}
+
+.center {
+      position: relative;
+      display: inline-block;
+      left: 50%;
+      transform: translate(-50%);
 }
 
 
@@ -51,7 +75,8 @@
   grid-template-columns: 1fr 1fr 1fr ;
   grid-template-areas: "header header header "
   "nav nav nav"
-  "content content sidebar";
+  "content content sidebar"
+  "spacer spacer spacer";
   grid-gap: 0px;
   color: #444;
   margin:0 auto
@@ -82,30 +107,59 @@ color:#fff;
 
 }
 
-nav li.active {
-background-image: linear-gradient(#0d0e13, #171723);
-color:#fff;
-font-weight:bold;
+.active {
+  background-image: linear-gradient(#0d0e13, #171723);
+  color:#fff;
 }
 
 
 h1 {
-font:1.7rem Century Gothic;
+font:1.7rem Arial;
+color:#fff;
+margin:15px 0;
+}
+
+
+h1.main_title {
+font:170% Century Gothic;
 color:#fff;
 font-weight:bold;
 margin:20px auto 0;
+text-align:center;
+}
+
+h2 {
+font:110% Verdana;
+color:#fff;
+font-weight:bold;
+margin:2px 0 15px;
 }
 
 p.note {
-padding:20px;
+padding:10px;
+margin: 10px;
 background:#2D2D44;
 color:#fff;
+}
+
+blockquote {
+background:url(../images/quote.gif) bottom right no-repeat #292935;
+padding:2px 17px;
+}
+
+a {
+	color:#9FF;
+}
+
+a:hover {
+	text-decoration: none;
+	text-align: center;
 }
 
 @media screen and (max-width: 600px){
   .wrapper {
     grid-template-columns: 1fr;
-    grid-template-areas: "header" "nav" "content" "sidebar";
+    grid-template-areas: "header" "nav" "content" "sidebar" "spacer";
     width: 100vw;
   }
 
