@@ -5,6 +5,12 @@ areas. 'Wrapper' is used for the main page, 'altwrapper' refers
 to pages that have an extra section at the bottom.
 ****************************************/
 
+body {
+  padding: 0;
+  margin: 0;
+}
+
+
 .contentgrid {
   grid-area: content;
   background:#151521;
@@ -35,6 +41,7 @@ to pages that have an extra section at the bottom.
 .spacegrid {
   grid-area: spacer;
   height: 15px;
+  width: 1vw;
 }
 
 .navgrid {
@@ -228,6 +235,18 @@ Mobile design modifications, assuming phone start at 600px across.
 
   nav li {
     font-size: 2.8vw;
+  }
+
+  .navgrid {
+    padding: 0;
+  }
+
+  .contentgrid {
+    padding: 5px;
+  }
+
+  .sidebargrid {
+    padding: 5px;
   }
 
   }
