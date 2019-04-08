@@ -1,3 +1,12 @@
+/*
+Some important things to open With
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
 /***************************************
 1) Grid Layout - this section defines the basic areas of each page.
 The wrappers contain the actual layout, everything else defines
@@ -229,5 +238,17 @@ Mobile design modifications, assuming phone start at 600px across.
   nav li {
     font-size: 2.8vw;
   }
+
+  tr {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin: 0.5em 0;
+      border: 1px solid rgba(3,3,3,0.2);
+    }
+    td, th {
+      flex: 1 1 150px;
+      border: 0.5px solid rgba(3,3,3,0.2);
+    }
 
   }
